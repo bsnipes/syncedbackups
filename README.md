@@ -9,6 +9,7 @@ One nice thing about rsnapshot is that it uses hard links so having so many back
 NOTE - this is only really for use where you don't have a remote backup server that can do a pull. If the main host running these scripts is compromised, it wouldn't protect your backup disks if they were mounted. This holds true for any backup solution.
 
 ZFS Pools/Datasets in use
+
     tank/rsnapshot - holds all rsnapshot synced data that is then synced to the USB drives
     tank/vm - vm dataset
     bkweek1/backup - week 1 external usb hard drive pool for tank/vm dataset snapshots
