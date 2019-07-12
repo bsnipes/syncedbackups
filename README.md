@@ -18,13 +18,13 @@ ZFS Pools/Datasets in use
 
 Directory Structure for the Config Files
 
-├── etc
-│   ├── crontab
-│   ├── rsnapshot.conf
-│   └── sanoid
-│       ├── sanoid.conf
-│       └── sanoid.defaults.conf
-└── README.md
+    ├── etc
+    │   ├── crontab
+    │   ├── rsnapshot.conf
+    │   └── sanoid
+    │       ├── sanoid.conf
+    │       └── sanoid.defaults.conf
+    └── README.md
 
 
 File Descriptions
