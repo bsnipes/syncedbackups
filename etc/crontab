@@ -15,10 +15,10 @@ PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
 
 # zfs
 */5 * * * * root /usr/sbin/sanoid --cron
-0 21 * * * root /usr/sbin/syncoid tank/vm bkweek1/backup
-30 21 * * * root /usr/sbin/syncoid tank/vm bkweek2/backup
-0 19 * * * root /usr/sbin/syncoid tank/rsnapshot bkweek1/rsnapshot
-30 19 * * * root /usr/sbin/syncoid tank/rsnapshot bkweek2/rsnapshot
+0 21 * * * root test -d /bkweek1/backup && /usr/sbin/syncoid tank/vm bkweek1/backup
+30 21 * * * root test -d /bkweek2/backup && /usr/sbin/syncoid tank/vm bkweek2/backup
+0 19 * * * root test -d /bkweek1/rsnapshot && /usr/sbin/syncoid tank/rsnapshot bkweek1/rsnapshot
+30 19 * * * root test -d /bkweek2/rsnapshot && /usr/sbin/syncoid tank/rsnapshot bkweek2/rsnapshot
 0 5 * * 5 root /sbin/zpool export bkweek1
 0 5 * * 5 root /sbin/zpool export bkweek2
 0 18 * * 5 root /sbin/zpool import bkweek1
