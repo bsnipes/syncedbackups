@@ -25,7 +25,6 @@ Directory Structure for the Config Files
     │   └── sanoid
     │       ├── sanoid.conf
     │       └── sanoid.defaults.conf
-    └── README.md
 
 
 File Descriptions
